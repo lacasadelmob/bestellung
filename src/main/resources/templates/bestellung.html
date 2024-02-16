@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>La Casa Del Mob</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-sm">
+  <div class="card mt-5">
+    <img src="/lacasadelmob-logo.png" class="card-img-top mx-auto" alt="La Casa Del Mob" style="width:20%;">
+    <div class="card-body">
+      <h1>Ihre Bestellung</h1>
+      <dl>
+        <dt>Name</dt>
+        <dd th:text="${bestellung.getName()}">John Doe</dd>
+      </dl>
+      <dl>
+        <dt>Pizza</dt>
+        <dd th:text="${bestellung.getPizza()}">Pizza mit Oliven, Paprika</dd>
+      </dl>
+      <p class="text-center fw-bold">Ihre Pizza wird bald zubereitet!</p>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

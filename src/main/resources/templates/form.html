@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>La Casa Del Mob</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-sm">
+  <div class="card mt-5">
+    <img src="/lacasadelmob-logo.png" class="card-img-top mx-auto" alt="La Casa Del Mob" style="width:20%;">
+    <div class="card-body">
+      <h1>Bestellung</h1>
+      <form method="post">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" name="name" id="name">
+        </div>
+        <h2>Pizza</h2>
+        <p>mit Tomatensoße und Mozzarella </p>
+        <h3>Zusätzlicher Belag</h3>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="salami" id="checkboxSalami">
+          <label class="form-check-label" for="checkboxSalami">
+            Salami
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="schinken" id="checkboxSchinken">
+          <label class="form-check-label" for="checkboxSchinken">
+            Schinken
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="pilze" id="checkboxPilze">
+          <label class="form-check-label" for="checkboxPilze">
+            Pilze
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="artischocken" id="checkoxArtischocken">
+          <label class="form-check-label" for="checkoxArtischocken">
+            Artischocken
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="oliven" id="checkboxOliven">
+          <label class="form-check-label" for="checkboxOliven">
+            Oliven
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="zwiebeln" id="checkboxZwiebeln">
+          <label class="form-check-label" for="checkboxZwiebeln">
+            Zwiebeln
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Jetzt bestellen!</button>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
