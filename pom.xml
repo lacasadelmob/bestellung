@@ -14,7 +14,7 @@
     <name>LaCasaDelMob</name>
     <description>LaCasaDelMob</description>
     <properties>
-        <java.version>21</java.version>
+        <java.version>23</java.version>
     </properties>
     <dependencies>
         <dependency>
