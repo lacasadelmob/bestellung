@@ -6,6 +6,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.UUID;
+
 @Controller
 @RequestMapping({"", "/"})
 public class BestellungController {
@@ -26,7 +28,7 @@ public class BestellungController {
     var id =
         bestellungRepository.save(
             new Bestellung(
-                bestellungRequest.name(),
+                UUID.randomUUID().toString(), bestellungRequest.name(),
                 bestellungRequest.salami() != null && bestellungRequest.salami(),
                 bestellungRequest.schinken() != null && bestellungRequest.schinken(),
                 bestellungRequest.pilze() != null && bestellungRequest.pilze(),

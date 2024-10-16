@@ -2,7 +2,6 @@ package it.lacasadelmob.bestellung;
 
 import java.time.ZonedDateTime;
 import java.util.Map;
-import java.util.UUID;
 import java.util.stream.Collectors;
 
 public final class Bestellung {
@@ -18,14 +17,14 @@ public final class Bestellung {
   private boolean abgeholt;
 
   public Bestellung(
-      String name,
+      String id, String name,
       boolean salami,
       boolean schinken,
       boolean pilze,
       boolean artischocken,
       boolean oliven,
       boolean zwiebeln) {
-    this.id = UUID.randomUUID().toString();
+    this.id = id;
     this.name = name;
     this.salami = salami;
     this.schinken = schinken;
